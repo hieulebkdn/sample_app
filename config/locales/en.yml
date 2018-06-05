@@ -31,15 +31,46 @@
 
 en:
   my_subtitle: "Ruby on Rails Tutorial Sample App"
+  tut_name: "Ruby on Rails Tutorial"
+  author: "Michael Hartl"
+  about: "About"
+  contact: "Contact"
+  news: "News"
+  home: "Home"
+  help: "Help"
+  log_in: "Log in"
+  sample_app: "sample_app"
+  the: "The "
+  by: "by"
 
   static_pages:
+    home:
+      signup_content: "Sign up now!"
+      content1: "This is the home page for the"
+      welcome_content: "Welcome to the Sample App"
     about:
       content1: "The "
       content2: " is a"
       content3: " and"
       content4: "to teach web development with"
       content5: "This is the sample application for the tutorial."
+      screencast_series: "screencast series"
+      book: "book"
+      ror: "Ruby on Rails"
 
     help:
       content1: "Get help on the Ruby on Rails Tutorial at the "
       content2: "and To get help on this sample app, see the"
+      content3: "Rails Tutorial help section"
+      content4: "Ruby on Rails Tutorial book"
+
+    contact:
+      content1: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      content2: "contact page"
+
+  users:
+    new:
+      title: "Sign up"
+      content1: "Sign up"
+      content2: "This will be a signup page for new users."
+

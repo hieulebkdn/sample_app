@@ -1,0 +1,3 @@
+user_email_maxlen: 255
+user_password_minlen: 6
+user_name_maxlen: 50
