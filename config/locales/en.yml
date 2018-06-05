@@ -30,4 +30,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-      rortsa: "Ruby on Rails Tutorial Sample App"
+  my_subtitle: "Ruby on Rails Tutorial Sample App"
+
+  static_pages:
+    about:
+      content1: "The "
+      content2: " is a"
+      content3: " and"
+      content4: "to teach web development with"
+      content5: "This is the sample application for the tutorial."
+
+    help:
+      content1: "Get help on the Ruby on Rails Tutorial at the "
+      content2: "and To get help on this sample app, see the"
