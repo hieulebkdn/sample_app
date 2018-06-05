@@ -1,10 +1,10 @@
-<% provide(:title, "Help") %>
+<% provide :title, (t "help") %>
 <h1>Help</h1>
 <p>
   <%= t(".content1") %>
-  <%= link_to "Rails Tutorial help section",
-  "http://www.railstutorial.org/help"%>
+  <%= link_to (t ".content3"),
+    "http://www.railstutorial.org/help"%>
   <%= t(".content2") %>
-  <em><%= link_to "Ruby on Rails Tutorial book",
-  "http://www.railstutorial.org/book"%></em>
+  <em><%= link_to (t ".content4"),
+    "http://www.railstutorial.org/book"%></em>
 </p>
