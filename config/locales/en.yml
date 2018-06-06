@@ -84,3 +84,5 @@ en:
       signup_content: "Sign up now!"
       email: "Email"
       password: "Password"
+      remember: "Remember me"
+      remember_me: "Remember me on this computer"
