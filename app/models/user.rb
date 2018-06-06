@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :name, length: {maximum: Settings.user_name_maxlen},
     presence: true
 
-  before_save{email.downcase!}
+  before_save{self.email = email.downcase}
 
   has_secure_password
 end
