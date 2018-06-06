@@ -82,3 +82,5 @@ en:
       title: "Log in"
       content1: "New user?"
       signup_content: "Sign up now!"
+      email: "Email"
+      password: "Password"
