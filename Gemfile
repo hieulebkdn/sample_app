@@ -12,6 +12,10 @@ gem "rubocop", "~> 0.49.1", require: false
 gem "rails", "~> 5.1.6"
 # Add Bootstrap
 gem "bootstrap-sass", "3.3.7"
+# Add bcrypt
+gem "bcrypt", "3.1.12"
+# Add config
+gem "config"
 
 gem "puma", "3.9.1"
 gem "sass-rails", "5.0.6"
