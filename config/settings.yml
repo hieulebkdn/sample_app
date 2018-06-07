@@ -3,3 +3,4 @@ user_password_minlen: 6
 user_name_maxlen: 50
 welcome_banner: "Welcome to the Sample App!"
 invalid_banner: "Invalid email/password combination"
+true_value: "1"
