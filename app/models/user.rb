@@ -7,7 +7,7 @@ class User < ApplicationRecord
     length: {maximum: Settings.user_email_maxlen},
     presence: true, uniqueness: {case_sensitive: false}
   validates :password, length: {minimum: Settings.user_password_minlen},
-    presence: true
+    presence: true, allow_nil: true
   validates :name, length: {maximum: Settings.user_name_maxlen},
     presence: true
 
