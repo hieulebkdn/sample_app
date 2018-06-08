@@ -5,7 +5,12 @@ class SessionsController < ApplicationController
 
   def create
     if @user.authenticate params[:session][:password]
-      login_checkremember
+      if @user.activated?
+        login_checkremember
+      else
+        flash[:warning] = t "cannot_activate_msg"
+        redirect_to root_url
+      end
     else
       handle_invalid_user
     end
