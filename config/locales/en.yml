@@ -31,7 +31,7 @@
 
 en:
   my_subtitle: "Ruby on Rails Tutorial Sample App"
-  welcome_content: "Welcome to the Sample App"
+  welcome_content: "Welcome to the Sample App!"
   tut_name: "Ruby on Rails Tutorial"
   author: "Michael Hartl"
   about: "About"
@@ -43,6 +43,18 @@ en:
   sample_app: "sample_app"
   the: "The "
   by: "by"
+  name: "Name"
+  email: "Email"
+  password: "Password"
+  password_confirm: "Confirmation"
+  savechange: "Save changes"
+  affirm: "You sure?"
+  deleted_user: "User deleted"
+  updated_profile: "Profile updated"
+  login_banner: "Please log in."
+  user_not_found: "User not found!"
+  invalid_banner: "Invalid email/password combination"
+  cannot_delete: "Cannot delete user!"
   static_pages:
     home:
       signup_content: "Sign up now!"
@@ -65,14 +77,15 @@ en:
       content1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       content2: "contact page"
   users:
+    index:
+      title: "All users"
     new:
       title: "Sign up"
       content1: "Create my account"
-      confirm: "Confirmation"
-      name: "Name"
-      email: "Email"
-      password: "Password"
-      password_confirm: "Confirmation"
+    edit:
+      edituser: "Edit user"
+      content1: "Update your profile"
+      savechange: "Save changes"
   shared:
     error_messages:
       content1: "The form contains"

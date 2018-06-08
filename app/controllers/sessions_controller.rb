@@ -26,7 +26,7 @@ class SessionsController < ApplicationController
   def login_checkremember
     log_in @user
     params[:session][:remember_me] == Settings.true_value ? remember(@user) : forget(@user)
-    redirect_to @user
+    redirect_back_or @user
   end
 
   def handle_invalid_user
