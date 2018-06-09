@@ -4,3 +4,4 @@ user_name_maxlen: 50
 true_value: "1"
 gravatar_size: 50
 gravatar_default_size: 80
+default_email: "noreply@example.com"

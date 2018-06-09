@@ -55,6 +55,13 @@ en:
   user_not_found: "User not found!"
   invalid_banner: "Invalid email/password combination"
   cannot_delete: "Cannot delete user!"
+  check_email_msg: "Please check your email to activate your account."
+  greeting: "Hi"
+  acc_activate: "Account activation"
+  acc_activated: "Account activated!"
+  invalid_link: "Invalid activation link"
+  mail_content: "Welcome to the Sample App! Click on the link below to activate your account:"
+  cannot_activate_msg: "Account not activated. Check your email for the activation link."
   static_pages:
     home:
       signup_content: "Sign up now!"
