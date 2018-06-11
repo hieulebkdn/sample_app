@@ -35,7 +35,7 @@ class SessionsController < ApplicationController
   end
 
   def handle_invalid_user
-    flash[:danger] = Settings.invalid_banner
+    flash[:danger] = t "invalid_banner"
     render :new
   end
 end
