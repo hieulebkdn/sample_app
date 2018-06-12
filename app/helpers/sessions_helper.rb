@@ -61,4 +61,8 @@ module SessionsHelper
   def authorize_admin? current_user
     current_user.admin? && !current_user?(@user)
   end
+
+  def load_current_user
+    @user ||= current_user
+  end
 end

@@ -79,6 +79,14 @@ en:
   micropost: "micropost"
   micropost_cannot_delete_msg: "Cannot delete this micropost."
   delete: "delete"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  following: "Following"
+  followers: "Followers"
+  micro: "Micropost:"
+  action_error_msg: "This action cannot be undone!"
+  upload_image_fail_msg: "should be less than 5MB"
+  reject_image_msg: "Maximum file size is 5MB. Please choose a smaller file."
   static_pages:
     home:
       signup_content: "Sign up now!"

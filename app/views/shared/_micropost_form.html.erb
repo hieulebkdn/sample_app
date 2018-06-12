@@ -4,7 +4,9 @@
     <%= f.text_area :content, placeholder: t(".compost_micropost") %>
   </div>
   <%= f.submit t(".post"), class: "btn btn-primary" %>
-  <span class="picture">
-    <%= f.file_field :picture %>
+  <span class="picture" >
+    <%= f.file_field :picture,
+      accept: Settings.accepted_image_format %>
   </span>
 <% end %>
+
