@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @users = User.user_activated.paginate page: params[:page]
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate page: params[:page]
+  end
 
   def new
     @user = User.new
@@ -46,17 +48,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  # Confirms a logged-in user.
-  def logged_in_user
-    warn_logged_in unless logged_in?
-  end
-
-  def warn_logged_in
-    store_location
-    flash[:danger] = t "login_banner"
-    redirect_to login_url
   end
 
   # Confirms the correct user.

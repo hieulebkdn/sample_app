@@ -6,3 +6,4 @@ gravatar_size: 50
 gravatar_default_size: 80
 default_email: "noreply@example.com"
 expired_time: 2
+micropost_content_maxlen: 140

@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       if @user.activated?
         login_checkremember
       else
-        flash[:warning] = t "cannot_activate_msg"
+        flash.now[:warning] = t "cannot_activate_msg"
         redirect_to root_url
       end
     else
@@ -35,7 +35,7 @@ class SessionsController < ApplicationController
   end
 
   def handle_invalid_user
-    flash[:danger] = t "invalid_banner"
+    flash.now[:danger] = t "invalid_banner"
     render :new
   end
 end

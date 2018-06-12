@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :email, format: {with: VALID_EMAIL_REGEX},
     length: {maximum: Settings.user_email_maxlen},
     presence: true, uniqueness: {case_sensitive: false}
@@ -21,7 +23,7 @@ class User < ApplicationRecord
   # Returns the hash digest of the given string.
   def self.digest string
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
-    BCrypt::Password.create(string, cost: cost)
+    BCrypt::Password.create string, cost: cost
   end
 
   # Returns a random token.
@@ -71,6 +73,12 @@ class User < ApplicationRecord
   # Returns true if a password reset has expired.
   def password_reset_expired?
     reset_sent_at < Settings.expired_time.hours.ago
+  end
+
+  # Defines a proto-feed.
+  # See "Following users" for the full implementation.
+  def feed
+    Micropost.user_microposts id
   end
 
   private
